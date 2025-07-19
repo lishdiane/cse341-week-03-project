@@ -22,6 +22,7 @@ async function getOneById(req, res, collection) {
   if (!response) {
     res.status(400).json("Not found. Check Id and try again.");
   }
+  return response;
 }
 
 async function deleteById(req, res, collection) {

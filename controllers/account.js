@@ -2,7 +2,7 @@ const model = require("../models");
 const accountModel = require("../models/account-model");
 
 async function getAccounts(req, res) {
-    const account = await model.getAll(req, res, "user");
+  const account = await model.getAll(req, res, "user");
 
   res.send(account);
 }

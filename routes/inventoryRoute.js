@@ -12,14 +12,14 @@ router.post(
   "/",
   validate.invRules(),
   validate.checkInvData,
-  util.handleErrors(invController.addInventory)
+  util.handleErrors(invController.addInventory),
 );
 
 router.put(
   "/:_id",
   validate.invRules(),
   validate.checkInvData,
-  util.handleErrors(invController.editInventoryById)
+  util.handleErrors(invController.editInventoryById),
 );
 
 router.delete("/:_id", util.handleErrors(invController.deleteInventoryById));

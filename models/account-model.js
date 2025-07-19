@@ -28,7 +28,7 @@ async function editAccount(req, res) {
   const id = new ObjectId(req.params._id);
 
   const result = await model.getOneById(req, res, "user");
-  
+
   const user = {
     fname: req.body.fname,
     lname: req.body.lname,

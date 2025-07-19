@@ -2,10 +2,9 @@ const mongoDB = require("../databases/connect");
 const { ObjectId } = require("mongodb");
 const model = require(".");
 
-
 async function createNewInventory(req, res) {
   const client = await mongoDB.connectToMongoDB();
-  
+
   const inv = {
     ISBN: req.body.ISBN,
     title: req.body.title,
