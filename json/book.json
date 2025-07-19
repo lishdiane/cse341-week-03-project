@@ -1,0 +1,59 @@
+[
+  {
+    "ISBN": "9781639730957",
+    "title": "Throne of Glass",
+    "author": "Maas, Sarah J.",
+    "releaseYear": "2023",
+    "publisher": "Bloomsbury Publishing",
+    "format": "paperback",
+    "pages": "432"
+  },
+  {
+    "ISBN": "9780199997329",
+    "title": "classical Mythology",
+    "author": "Morford, Mark P. O.",
+    "releaseYear": "2002",
+    "publisher": "Oxford University Press",
+    "format": "paperback",
+    "pages": "844"
+  },
+  {
+    "ISBN": "9781552041772",
+    "title": "Jane Doe",
+    "author": "Kaiser, R.J.",
+    "releaseYear": "1999",
+    "publisher": "Dh Audio",
+    "format": " Audio Cassette",
+    "pages": ""
+  },
+  {
+    "ISBN": "9780345402875",
+    "title": "Airframe",
+    "author": "Michael Crichton",
+    "releaseYear": "2001",
+    "publisher": "HarperCollins Publishers, Ltd",
+    "format": "paperback",
+    "pages": "320"
+  },
+  {
+    "ISBN": "9780446310789",
+    "title": "To Kill a Mockingbird",
+    "author": "Lee, Harper",
+    "releaseYear": "1988",
+    "publisher": "Grand Central Publishing",
+    "format": "paperback",
+    "pages": "384"
+  },
+
+   {
+    "ISBN": "9781401971366",
+    "title": "The Let Them Theory",
+    "author": "Mel Robbins",
+    "releaseYear": "1988",
+    "publisher": "Hay House LLC",
+    "format": "Hardcover",
+    "pages": "50"
+  }
+
+
+]
