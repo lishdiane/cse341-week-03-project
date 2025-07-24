@@ -10,6 +10,7 @@ router.get("/:_id", util.handleErrors(accountController.getAccountById));
 
 router.post(
   "/",
+  util.isAuthenticated,
   validate.accountRules(),
   validate.checkAccountData,
   util.handleErrors(accountController.addAccount),
