@@ -23,6 +23,8 @@ router.put(
   util.handleErrors(accountController.editAccountById),
 );
 
-router.delete("/:_id", util.handleErrors(accountController.deleteAccountById));
+router.delete("/:_id",
+  util.isAuthenticated,
+  util.handleErrors(accountController.deleteAccountById));
 
 module.exports = router;

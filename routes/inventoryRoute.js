@@ -24,6 +24,10 @@ router.put(
   util.handleErrors(invController.editInventoryById),
 );
 
-router.delete("/:_id", util.handleErrors(invController.deleteInventoryById));
+router.delete(
+  "/:_id",
+  util.isAuthenticated,
+  util.handleErrors(invController.deleteInventoryById)
+);
 
 module.exports = router;
