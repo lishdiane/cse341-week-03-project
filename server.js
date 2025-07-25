@@ -60,9 +60,10 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.get("/", (req, res) => {
   console.log(req.session.user)
+  
   res.send(
     req.session.user !== undefined
-      ? `Logged in as ${req.session.user.name}`
+      ? `Logged in as ${req.session.user.name} ${ res.json(req.session.user) }`
       : "Logged Out"
   );
 });
