@@ -10,6 +10,7 @@ router.get("/:_id", util.handleErrors(invController.getInventoryById));
 
 router.post(
   "/",
+  util.isAuthenticated,
   validate.invRules(),
   validate.checkInvData,
   util.handleErrors(invController.addInventory),
@@ -17,6 +18,7 @@ router.post(
 
 router.put(
   "/:_id",
+  util.isAuthenticated,
   validate.invRules(),
   validate.checkInvData,
   util.handleErrors(invController.editInventoryById),
