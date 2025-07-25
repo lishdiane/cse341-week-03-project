@@ -63,7 +63,7 @@ app.get("/", (req, res) => {
   
   res.send(
     req.session.user !== undefined
-      ? `Logged in as ${req.session.user.name} ${ res.json(req.session.user) }`
+      ? `Logged in as ${req.session.user.username}`
       : "Logged Out"
   );
 });
